@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Bby<3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ================= PAGE 1 : CARD ================= -->
+  <section id="page1" class="page">
+    <img class="title-img" src="happy-title.png" alt="Happy Birthday to My Sweet Heart">
+
+    <div class="letter-card">
+      <img src="letter-content.png" alt="letter">
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- photos injected by script.js (doubled for seamless loop) -->
+      </div>
+    </div>
+
+    <button class="open-gift-btn" id="openGiftBtn" aria-label="Open your gift">
+      <img src="btn-open-gift.png" alt="Open your Gift">
+    </button>
+  </section>
+
+  <!-- ================= PAGE 2 : COUPONS ================= -->
+  <section id="page2" class="page">
+    <div class="coupon-grid" id="couponGrid"></div>
+    <button class="secret-trigger" id="secretTrigger" aria-label="secret">♡</button>
+  </section>
+
+</div>
+
+<!-- ---------- modal ---------- -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-canvas-wrap"><canvas id="cpCanvas" width="1350" height="1080"></canvas></div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="useBtn">ใช้คูปองนี้เลย</button>
+      <button class="btn btn-secondary" id="saveBtn">บันทึกเป็นรูปภาพ</button>
+    </div>
+    <p class="modal-note" id="modalNote"></p>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="hearts-burst" id="heartsBurst"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
